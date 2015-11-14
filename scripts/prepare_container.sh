@@ -12,6 +12,7 @@ function prepare_container(){
     fi
 
     docker run --name $container \
+        --device /dev/kvm \
         -v /data/docker/openqa-webui/var_lib_openqa_share:/var/lib/openqa/share \
         -v /data/docker/openqa-worker/etc_openqa:/etc/openqa \
         -d -t $image bash

@@ -1,0 +1,6 @@
+[submodule "source/openQA"]
+	path = source/openQA
+	url = https://github.com/choldrim/openQA.git
+[submodule "source/os-autoinst"]
+	path = source/os-autoinst
+	url = https://github.com/choldrim/os-autoinst.git

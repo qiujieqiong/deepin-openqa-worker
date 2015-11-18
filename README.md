@@ -67,6 +67,5 @@ openqa-worker-stop
 ```
 
 ## Uninstall
-After running `openqa-webui-stop`, the container won't be removed from you machine.  
-If you don't use it any more, just run `docker rm -f deepin/openqa-webui` to remove it.
+If you don't use it any more, just run `docker rm -f deepin/openqa-worker` to remove it.
 

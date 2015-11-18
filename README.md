@@ -4,8 +4,8 @@ Thanks to [os-autoinst](https://github.com/os-autoinst) for providing such a goo
 
 ## Dependencies
 docker 1.8+ ([Docker Installation](http://docs.docker.com/engine/installation/))  
-docker image: deepin/openqa-base ( [openQA-base](https://github.com/choldrim/deepin-openqa-base-runner) )
-openQA webui server (a local or remote openQA webui environment is needed [openQA-webui](https://github.com/choldrim/deepin-openqa-webui))
+docker image: deepin/openqa-base ([openQA-base](https://github.com/choldrim/deepin-openqa-base-runner))  
+local or remote openQA server ([openQA-webui](https://github.com/choldrim/deepin-openqa-webui))
 
 
 ## Installation

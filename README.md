@@ -1,6 +1,6 @@
 # deepin-openqa-worker
 **Description**: this project is the backend of the openQA server running on https://openqa.deepin.io  
-Thanks to [os-autoinst](https://github.com/os-autoinst) for providing such a good frame.
+**Thanks**: Thanks to [os-autoinst](https://github.com/os-autoinst) group for providing such a good automated testing framework.
 
 ## Dependencies
 docker 1.8+ ([Docker Installation](http://docs.docker.com/engine/installation/))  
@@ -27,7 +27,8 @@ git clone --recursive https://github.com/choldrim/deepin-openqa-worker
 #### 2. prepare the worker container
 ```shell
 cd deepin-openqa-worker
-make build
+make ready  # reconfig & build source code
+make build  # build container
 ```
 
 #### 3. cp the tools to your PATH
@@ -48,6 +49,7 @@ keep the `client.conf` file containing:
 key = 1234567890ABCDEG
 secret = 1234567890ABCDEG
 ```
+
 and `workers.conf` file shuld contain:
 ```ini
 [0]
@@ -69,3 +71,10 @@ openqa-worker-stop
 ## Uninstall
 If you don't use it any more, just run `docker rm -f deepin/openqa-worker` to remove it.
 
+### Relative
+[openQA](https://github.com/os-autoinst/openQA)  
+[os-autoinst](https://github.com/os-autoinst/os-autoinst)  
+[deepin-openqa-base-runner](https://github.com/choldrim/deepin-openqa-base-runner)  
+[deepin-openqa-webui](https://github.com/choldrim/deepin-openqa-webui)  
+[deepin-openqa-worker](https://github.com/choldrim/deepin-openqa-worker)  
+[deepin-openqa-task-trigger](https://github.com/choldrim/deepin-openqa-task-trigger)  

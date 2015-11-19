@@ -5,8 +5,8 @@
 ## Dependencies
 docker 1.8+ ([Docker Installation](http://docs.docker.com/engine/installation/))  
 docker image: deepin/openqa-base ([openQA-base](https://github.com/choldrim/deepin-openqa-base-runner))  
+libtheora-dev libopencv-dev pkg-config libtool autoconf automake g++  
 local or remote openQA server ([openQA-webui](https://github.com/choldrim/deepin-openqa-webui))
-
 
 ## Installation
 #### 0. environment preparation
@@ -18,6 +18,7 @@ reference  [openQA-webui](https://github.com/choldrim/deepin-openqa-webui)
 sudo mkdir -p /data
 sudo chmod 777 /data
 ```
+
 
 #### 1. clone the code
 ```shell

@@ -35,8 +35,9 @@ function install_webui(){
 
 function install_os_autoinst(){
 
-    # install
-    docker exec $container make -C /usr/lib/os-autoinst/ppmclibs install
+    # build and install ppmclibs
+    docker exec $container bash -c "cd /usr/lib/os-autoinst/ppmclibs \
+        && perl Makefile.PL && make && make install"
 
 }
 

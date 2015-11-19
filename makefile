@@ -10,11 +10,6 @@ ready:
 	&& autoreconf -f -i \
 	&& ./configure \
 	&& make
-	
-	# build tinycv
-	cd source/os-autoinst/ppmclibs \
-	&& perl Makefile.PL \
-	&& make \
 
 install:
 	cp -r bin/* /usr/bin

@@ -4,14 +4,14 @@
 
 ## Dependencies
 * docker 1.8+ ([Docker Installation](http://docs.docker.com/engine/installation/))  
-* docker image: deepin/openqa-base ([openQA-base](https://github.com/choldrim/deepin-openqa-base-runner))  
+* docker image: deepin/openqa-base ([openQA-base](https://github.com/qiujieqiong/deepin-openqa-base-runner))  
 * libtheora-dev libopencv-dev pkg-config libtool autoconf automake g++  
-* local or remote openQA server ([openQA-webui](https://github.com/choldrim/deepin-openqa-webui))
+* local or remote openQA server ([openQA-webui](https://github.com/qiujieqiong/deepin-openqa-webui))
 
 ## Installation
 #### 0. environment preparation
 (1) prepare an on-service state openQA webui server
-reference  [openQA-webui](https://github.com/choldrim/deepin-openqa-webui)
+reference  [openQA-webui](https://github.com/qiujieqiong/deepin-openqa-webui)
 
 (2) prepare the `/data` dir for the default workspace  
 ```shell
@@ -22,7 +22,7 @@ sudo chmod 777 /data
 
 #### 1. clone the code
 ```shell
-git clone --recursive https://github.com/choldrim/deepin-openqa-worker
+git clone --recursive https://github.com/qiujieqiong/deepin-openqa-worker
 ```
 
 #### 2. prepare the worker container
@@ -75,7 +75,7 @@ If you don't use it any more, just run `docker rm -f deepin/openqa-worker` to re
 ### Relative
 [openQA](https://github.com/os-autoinst/openQA)  
 [os-autoinst](https://github.com/os-autoinst/os-autoinst)  
-[deepin-openqa-base-runner](https://github.com/choldrim/deepin-openqa-base-runner)  
-[deepin-openqa-webui](https://github.com/choldrim/deepin-openqa-webui)  
-[deepin-openqa-worker](https://github.com/choldrim/deepin-openqa-worker)  
-[deepin-openqa-task-trigger](https://github.com/choldrim/deepin-openqa-task-trigger)  
+[deepin-openqa-base-runner](https://github.com/qiujieqiong/deepin-openqa-base-runner)  
+[deepin-openqa-webui](https://github.com/qiujieqiong/deepin-openqa-webui)  
+[deepin-openqa-worker](https://github.com/qiujieqiong/deepin-openqa-worker)  
+[deepin-openqa-task-trigger](https://github.com/qiujieqiong/deepin-openqa-task-trigger)  
